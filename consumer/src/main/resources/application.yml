@@ -1,0 +1,10 @@
+
+dubbo:
+  application:            #应用配置，用于配置当前应用信息，不管该应用是提供者还是消费者。
+    name: msw_consumer
+  registry:                 #注册中心配置，用于配置连接注册中心相关信息。
+    address: zookeeper://192.168.165.82:2181
+  metadata-report:
+    address: zookeeper://192.168.165.82:2181
+server:
+  port: 9601
